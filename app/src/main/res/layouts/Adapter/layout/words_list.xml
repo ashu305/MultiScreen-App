@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EF8200"
+        android:id="@+id/parrentView">
+
+        <TextView
+            android:id="@+id/miworkWord"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="uno"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ImageManage"
+            app:layout_constraintStart_toEndOf="@+id/ImageManage"
+            app:layout_constraintTop_toTopOf="@+id/ImageManage"
+            app:layout_constraintVertical_bias="0.32999998"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/EngWord"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="One"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/miworkWord"
+            app:layout_constraintStart_toStartOf="@+id/miworkWord"
+            app:layout_constraintTop_toBottomOf="@+id/miworkWord"
+            app:layout_constraintVertical_bias="0.0"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/ImageManage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#E4CDC7B3"
+            >
+
+            <ImageView
+                android:id="@+id/imgValues"
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39"
+                app:srcCompat="@drawable/ic_baseline_account_box_24"
+                tools:ignore="VectorDrawableCompat" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</RelativeLayout>
